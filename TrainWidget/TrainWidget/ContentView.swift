@@ -25,10 +25,6 @@ struct ContentView: View {
                        
                 }
             }
-
-
-               
-              
             
             .navigationTitle("BeReady")
             .navigationBarTitleDisplayMode(.automatic)
