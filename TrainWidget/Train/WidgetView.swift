@@ -9,68 +9,80 @@ import SwiftUI
 let blue1 = Color("20314E")
 struct WidgetView: View {
     var body: some View {
-        ZStack{
-            RoundedRectangle(cornerRadius: 20)
-                .frame(width: 207,height: 133.0)
-                .padding(.leading)
-                .foregroundColor(blue1)
             
             VStack{
-            
+
             HStack{
-            Image(systemName: "tram")
-                .foregroundColor(Color.white)
-                .scaleEffect(1.25)
+                Spacer()
+                Spacer()
                 
+            Image(systemName: "tram")
+                .scaleEffect(1.25)
+                .foregroundColor(Color.white)
              
+                Spacer()
+                Spacer()
+                Spacer()
+                
                 Text("In 8 minutes")
                     .foregroundColor(Color.white)
                 
+                Spacer()
             }
                 
-            HStack(alignment: .center){
+            HStack(){
        
+                Spacer()
+                
                 VStack{
                     Text("8:30")
-                        .foregroundColor(Color.white)
                         .fontWeight(.bold)
                         .font(.system(size: 21))
-                    Text("Casalnuovo")
                         .foregroundColor(Color.white)
+
+                    Text("Acerra")
+                        .foregroundColor(Color.white)
+
                 }
-                    
+                Spacer()
+                Spacer()
                 Image(systemName: "arrow.forward")
                         .scaleEffect(1.2)
-                        .foregroundColor(Color.white)
                         .frame(width: 3, height: 4)
+                        .foregroundColor(Color.white)
+
+                Spacer()
+                Spacer()
                 
                 VStack{
                     Text("10:30")
-                        .foregroundColor(Color.white)
                         .fontWeight(.bold)
                         .font(.system(size: 21))
-                        .lineSpacing(22)
+                        .foregroundColor(Color.white)
+
                     Text("Napoli")
                         .foregroundColor(Color.white)
-                        
+
                 }
+                Spacer()
+                
             }
         
                 Rectangle()
-                    .frame(width: 200, height: 20)
+                    .frame(width: 170, height: 3)
+                    .foregroundColor(Color.gray)
             
                 Text("Next in 32 minutes")
                     .font(.body)
                     .fontWeight(.semibold)
-                    .foregroundColor(Color.white)
                     .bold()
-                    .padding(.leading,25)
-                    
+                    .foregroundColor(Color.white)
             
             }
-            }.frame(width: 208,height: 134)
-
-    }
+            .frame(width: 170, height: 170)
+            .background((Color(red: 32/255, green: 49/255, blue: 78/255,opacity: 1)))
+            }
+    
 }
 
 struct WidgetPreview: PreviewProvider {

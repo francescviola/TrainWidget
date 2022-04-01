@@ -116,7 +116,7 @@ struct TrainEntryView : View {
             
             }
             .frame(width: 170, height: 170)
-            .background(Color.blue)
+            .background((Color(red: 32/255, green: 49/255, blue: 78/255,opacity: 1)))
             }
     }
 
