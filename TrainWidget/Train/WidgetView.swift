@@ -15,6 +15,7 @@ struct WidgetView: View {
     let today = DateComponents()
     let today1 = DateComponents()
     
+    
 //    let formatter2 = DateFormatter()
 //    formatter2.timeStyle = .medium
 //    print(formatter2.string(from: today))

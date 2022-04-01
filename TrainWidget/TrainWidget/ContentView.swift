@@ -16,17 +16,19 @@ struct ContentView: View {
         NavigationView{
 
            
-                List{
-                    WidgetView(timeDeparture: "10:30", timeArrival: "11:10",nextArrival: 6)
-                    WidgetView(timeDeparture: "11:00", timeArrival: "11:40",nextArrival: 36)
+               
+            List{
+                    ForEach(departuresAcerraNapoli,id: \.self) {card in
+                        WidgetView(timeDeparture: card.departureTime, timeArrival: card.arrivalTime, nextArrival: 3)
+                    }
                        
-                }
+                
             
             
             .navigationTitle("BeReady")
            
         }
-        
+        }
     }
 
 }
