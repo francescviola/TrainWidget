@@ -6,10 +6,24 @@
 //
 
 import SwiftUI
+import Foundation
 let blue1 = Color("20314E")
 struct WidgetView: View {
+    var timeDeparture = "9:00"
+    var timeArrival = "10:00"
+    var nextArrival = 46
+    let today = DateComponents()
+    let today1 = DateComponents()
+    
+//    let formatter2 = DateFormatter()
+//    formatter2.timeStyle = .medium
+//    print(formatter2.string(from: today))
+    
+   
+    
+    
     var body: some View {
-            
+     
             VStack{
 
             HStack{
@@ -24,7 +38,7 @@ struct WidgetView: View {
                 Spacer()
                 Spacer()
                 
-                Text("In 8 minutes")
+                Text("In \(nextArrival) minutes")
                     .foregroundColor(Color.white)
                 
                 Spacer()
@@ -35,7 +49,7 @@ struct WidgetView: View {
                 Spacer()
                 
                 VStack{
-                    Text("8:30")
+                    Text("\(timeDeparture)")
                         .fontWeight(.bold)
                         .font(.system(size: 21))
                         .foregroundColor(Color.white)
@@ -55,7 +69,7 @@ struct WidgetView: View {
                 Spacer()
                 
                 VStack{
-                    Text("10:30")
+                    Text("\(timeArrival)")
                         .fontWeight(.bold)
                         .font(.system(size: 21))
                         .foregroundColor(Color.white)

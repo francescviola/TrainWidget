@@ -15,7 +15,8 @@ import Foundation
             var arrivalTime : TimeInterval
 
         }
-        
+       
+
 //        var card1 = Card(actualTime: 10, arrivalTime: 10)
 //        var card2 = Card(actualTime: 10, arrivalTime: 4)
 //        var time = 30

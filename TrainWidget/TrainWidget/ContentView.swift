@@ -17,8 +17,8 @@ struct ContentView: View {
 
            
                 List{
-                    WidgetView()
-                    WidgetView()
+                    WidgetView(timeDeparture: "10:30", timeArrival: "11:10",nextArrival: 6)
+                    WidgetView(timeDeparture: "11:00", timeArrival: "11:40",nextArrival: 36)
                        
                 }
             
@@ -82,4 +82,11 @@ extension Color {
       return nil
     }
   }
+}
+extension Date {
+
+    static func - (lhs: Date, rhs: Date) -> TimeInterval {
+        return lhs.timeIntervalSinceReferenceDate - rhs.timeIntervalSinceReferenceDate
+    }
+
 }
