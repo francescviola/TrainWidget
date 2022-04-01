@@ -24,6 +24,7 @@
 		26344AA327F306B300621BF6 /* Train.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 26344A9E27F306B200621BF6 /* Train.intentdefinition */; };
 		26344AA627F306B300621BF6 /* TrainExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 26344A9527F306B200621BF6 /* TrainExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		26344AAC27F306F900621BF6 /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26344AAB27F306F900621BF6 /* WidgetView.swift */; };
+		26953EAC27F6E7220010B4FB /* WidgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26953EAB27F6E7220010B4FB /* WidgetModel.swift */; };
 		26A30A8C27F5A39900914847 /* DataTrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A30A8B27F5A39900914847 /* DataTrain.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		26344A9F27F306B300621BF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26344AA127F306B300621BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26344AAB27F306F900621BF6 /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
+		26953EAB27F6E7220010B4FB /* WidgetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetModel.swift; sourceTree = "<group>"; };
 		26A30A8B27F5A39900914847 /* DataTrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -197,11 +199,12 @@
 			isa = PBXGroup;
 			children = (
 				26344A9C27F306B200621BF6 /* Train.swift */,
+				26953EAB27F6E7220010B4FB /* WidgetModel.swift */,
+				26344AAB27F306F900621BF6 /* WidgetView.swift */,
 				26A30A8B27F5A39900914847 /* DataTrain.swift */,
 				26344A9E27F306B200621BF6 /* Train.intentdefinition */,
 				26344A9F27F306B300621BF6 /* Assets.xcassets */,
 				26344AA127F306B300621BF6 /* Info.plist */,
-				26344AAB27F306F900621BF6 /* WidgetView.swift */,
 			);
 			path = Train;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26344AAC27F306F900621BF6 /* WidgetView.swift in Sources */,
+				26953EAC27F6E7220010B4FB /* WidgetModel.swift in Sources */,
 				26344AA327F306B300621BF6 /* Train.intentdefinition in Sources */,
 				26344A6C27F3067100621BF6 /* Persistence.swift in Sources */,
 				26344A6527F3066F00621BF6 /* ContentView.swift in Sources */,

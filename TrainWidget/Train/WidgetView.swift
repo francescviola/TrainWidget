@@ -79,7 +79,8 @@ struct WidgetView: View {
                     .foregroundColor(Color.white)
             
             }
-            .frame(width: 170, height: 170)
+            .frame(width: UIScreen.main.bounds.width*0.880, height: UIScreen.main.bounds.height*0.192)
+            
             .background((Color(red: 32/255, green: 49/255, blue: 78/255,opacity: 1)))
             }
     
