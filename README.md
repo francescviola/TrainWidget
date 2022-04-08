@@ -1,6 +1,7 @@
 # TrainWidget
 A widget that makes it easier to be in time with public transportation.It will never make you miss a train
 Guide To How to create a static Widget
+
 Widget extension setup
 Widgets are created with widget extensions, so select File, New, Target, Widget Extension. The name corresponds to your application, and add "WidgetExtension”.
 Finally, make sure that TrainWidgetExtension is selected for running otherwise the widget will not be launched on the simulator.Configuration intent is useful to customize, such as adding a custom SiriKit intent definition to the project.
